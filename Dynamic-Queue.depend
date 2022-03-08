@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1646759657 source:c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 7\dynamic-queue\main.cpp
+	<iostream>
+	"queue.h"
+
+1646759612 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 7\dynamic-queue\queue.h
+	"node.h"
+	<iostream>
+
+1646757994 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 7\dynamic-queue\node.h
+

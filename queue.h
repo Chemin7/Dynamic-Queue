@@ -1,77 +1,80 @@
 #ifndef QUEUE_H_INCLUDED
 #define QUEUE_H_INCLUDED
-
-class Queue{
- private:
-     Node* head;
-     Node* rear;
+#include "node.h"
+#include <iostream>
 
 
- public:
-    Queue();
+class Queue {
+    private:
+        Node* head;
+        Node* rear;
 
-    void enqueue(int);
-    void dequeue();
-    int getFront();
-    int getLast();
 
-    bool isEmpty();
-};
+    public:
+        Queue() {
+            this->head =NULL;
+            this->rear = NULL;
+            };
 
-Queue::Queue(): head(NULL) , rear(NULL) {}
+        void enqueue(int);
+        void dequeue();
+        int getFront();
+        int getLast();
 
-void Queue::enqueue(int e)
-{
-    Node*ptr = new Node();
+        bool isEmpty();
+    };
+
+
+void Queue::enqueue(int e) {
+    Node* ptr = new Node();
     ptr->data=e;
     ptr->next = NULL;
 
-    if(head == NULL){
+    if(head == NULL) {
         head=ptr;
         rear=ptr;
-    }else{
+        }
+    else {
         rear->next=ptr;
         rear=ptr;
+        }
+
+
     }
 
-
-}
-
-void Queue::dequeue()
-{
-    if(isEmpty()){
-        cout<<"La cola esta vacia"<<endl;
-    }else if(head==rear){
+void Queue::dequeue() {
+    if(isEmpty()) {
+        std::cout<<"La cola esta vacia"<<std::endl;
+        }
+    else if(head==rear) {
         delete(head);
         head=NULL;
         rear=NULL;
-    }else{
+        }
+    else {
         Node* ptr=head;
         head=head->next;
-        delete(ptr;)
+        delete(ptr);
+        }
     }
-}
 
-int Queue::getFront()
-{
-    if(isEmpty)
-        cout<<"La cola esta vacia"<<endl;
+int Queue::getFront() {
+    if(isEmpty())
+        std::cout<<"La cola esta vacia"<<std::endl;
 
     return head->data;
 
-}
+    }
 
-int Queue::getLast()
-{
-    if(isEmpty)
-        cout<<"La cola esta vacia"<<endl;
+int Queue::getLast() {
+    if(isEmpty())
+        std::cout<<"La cola esta vacia"<<std::endl;
 
     return rear->data;
-}
+    }
 
-bool Queue::isEmpty()
-{
+bool Queue::isEmpty() {
     return head == NULL and rear == NULL;
-}
+    }
 
 #endif // QUEUE_H_INCLUDED
