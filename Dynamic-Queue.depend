@@ -13,3 +13,17 @@
 1646859112 c:\users\user\onedrive - universidad de guadalajara\2do sem\sed1\actividad 7\dynamic-queue\validate.h
 	<string>
 
+1646939146 source:c:\users\usuario\documents\proyectos\dynamic-queue\main.cpp
+	<iostream>
+	"queue.h"
+	"validate.h"
+
+1646938979 c:\users\usuario\documents\proyectos\dynamic-queue\queue.h
+	"node.h"
+	<iostream>
+
+1646938979 c:\users\usuario\documents\proyectos\dynamic-queue\node.h
+
+1646938979 c:\users\usuario\documents\proyectos\dynamic-queue\validate.h
+	<string>
+

@@ -57,6 +57,8 @@ void menu() {
                     cout<<q.getLast()<<endl;;
                 system("pause");
                 break;
+            case 5:
+                break;
             default:
                 cout<<"Opcion invalida"<<endl;
                 system("pause");
